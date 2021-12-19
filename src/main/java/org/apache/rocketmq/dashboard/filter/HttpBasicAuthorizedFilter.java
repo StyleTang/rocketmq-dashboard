@@ -28,7 +28,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebFilter(urlPatterns = "/*", filterName = "httpBasicAuthorizedFilter")
+@WebFilter(urlPatterns = "/*", filterName = "httpBasicAuthorizedFilter", asyncSupported = true)
 public class HttpBasicAuthorizedFilter implements Filter {
     
     @Override
